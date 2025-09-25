@@ -1,9 +1,0 @@
-latice/player/PlayerTest.class
-latice/player/PoolTest.class
-latice/gameboard/GameBoardTest.class
-latice/tile/TileTest.class
-latice/cell/CellTest.class
-latice/console/ConsoleTest.class
-latice/controller/RefereeTest.class
-latice/cell/PositionTest.class
-latice/player/RackTest.class

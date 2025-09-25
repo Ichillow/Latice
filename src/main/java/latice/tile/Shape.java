@@ -12,7 +12,7 @@ public enum Shape{
 	private final String form;
 
 	// Constructor to initialize the shape
-	Shape(String shape) {
+	private Shape(String shape) {
 		this.form = shape;
 	}
 	

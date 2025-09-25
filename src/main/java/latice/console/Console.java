@@ -73,9 +73,15 @@ public class Console {
 	}
 	
 	public static void printBoard(Map<Position,Cell> board) {
+		
+		println("   1  2  3  4  5  6  7  8  9");
+		
 		for (int i = 0; i < GameBoard.ROWS; i++) {
 			
+			print(i+1+": ");
+			
 			for (int j = 0; j < GameBoard.COLS; j++) {
+				
 				
 				Cell cell = board.get(new Position(i, j));
 				
@@ -88,7 +94,7 @@ public class Console {
 						print(cell.getType().getSymbol());
 					}
 				} else {
-					print(CellType.NORMAL.getSymbol());
+					print(CellType.SEA.getSymbol());
 				}
 				print(" ");
 			}

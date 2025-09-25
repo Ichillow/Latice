@@ -1,10 +1,14 @@
 package latice.player;
 
+import latice.tile.Tile;
+
 public class Player {
 	private final String name;
 	private Integer point;
 	private Rack rack;
 	private Pool pool;
+	private int tilesPlaced = 0;
+	
 	
 	public Player(String name, Rack rack, Pool pool) {
 		this.name = name;
@@ -39,4 +43,24 @@ public class Player {
 	public String getName() {
 		return name;
 	}
-}	
+	
+	public Integer getPoint() {
+		return point;
+	}
+	
+    public void addPoint(Integer point) {
+        this.point = this.point + point;
+    }
+    
+    public Tile playTile(int index) {
+    	return rack.removeTile(index);
+    }
+    
+    public void incrementTilesPlaced() {
+        tilesPlaced++;
+    }
+
+    public int getTilesPlaced() {
+        return tilesPlaced;
+    }
+}

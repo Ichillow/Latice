@@ -22,6 +22,7 @@ public class Tile {
 		return shape.getShape();
 	}
 	
+	@Override
 	public String toString() {
 		return getColor() + getShape() + Color.RESET.getCode();
 	}

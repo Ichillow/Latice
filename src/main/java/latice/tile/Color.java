@@ -14,7 +14,7 @@ public enum Color {
 	private final String code;
 
 	// Constructor to initialize the color
-    Color(String code) {
+    private Color(String code) {
         this.code = code;
     }
 

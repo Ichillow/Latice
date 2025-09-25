@@ -30,4 +30,16 @@ public class Rack {
     public List<Tile> getTiles() {
         return tiles;
     }
+    
+    public int size() {
+		return tiles.size();
+	}
+    
+    public Tile removeTile(int index) {
+		if (index >= 0 && index < tiles.size()) {
+			return tiles.remove(index);
+		} else {
+			throw new IndexOutOfBoundsException("Invalid index: " + index);
+		}
+	}
 }

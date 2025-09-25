@@ -23,7 +23,7 @@ public class PoolTest {
         tiles.add(new Tile(Color.RED, Shape.TURTLE));
         tiles.add(new Tile(Color.BLUE, Shape.FLOWER));
         tiles.add(new Tile(Color.GREEN, Shape.LIZARD));
-        pool = new Pool(new ArrayList<>(tiles)); // Copie pour éviter les effets de bord
+        pool = new Pool(new ArrayList<>(tiles)); 
     }
 
     @Test

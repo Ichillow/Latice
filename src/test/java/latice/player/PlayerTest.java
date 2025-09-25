@@ -66,4 +66,10 @@ class PlayerTest {
     void testGetName() {
         assertEquals("Alice", playerWithPool.getName());
     }
+    
+    @Test
+    void testGetPoint() {
+		assertEquals(0, playerWithPool.getPoint());
+
+	}
 }
